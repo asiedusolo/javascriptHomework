@@ -1,0 +1,49 @@
+$ git clone maryrose-hw js-homework
+Cloning into 'js-homework'...
+done.
+$ cd js-homework/
+$ git branch
+* master
+$ git branch comment-maryrose
+$ git branch
+  comment-maryrose
+* master
+$ git checkout comment-maryrose
+Switched to branch 'comment-maryrose'
+$ git add homework.js
+$ git commit -m "adding comments to homework.js"
+[comment-maryrose 926a750] adding comments to homework.js
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+$ git push origin comment-maryrose
+Counting objects: 3, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 336 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To /home/ccuser/workspace/js-homework/maryrose-hw
+ * [new branch]      comment-maryrose -> comment-maryrose
+$ cd ../maryrose-hw/
+$ git remote -v
+$ ls
+homework.js
+$ git log
+commit f6f5b1a0298d9ac0c257ebea665e56a7effc1557
+Author: danasselin <johndoe@example.com>
+Date:   Thu Nov 19 16:30:26 2015 -0500
+
+    Finish my homework
+
+commit 04107e57402323d48bbd2e1692a3ba04940dd89e
+Author: danasselin <johndoe@example.com>
+Date:   Thu Nov 19 16:23:15 2015 -0500
+
+    Write if/else statement
+
+commit d8570f2181b57e94cacc8021dbc0a917897f2efe
+Author: danasselin <johndoe@example.com>
+Date:   Thu Nov 19 16:18:08 2015 -0500
+
+    add homework.js
+$ git status
+On branch master
+nothing to commit, working directory clean
